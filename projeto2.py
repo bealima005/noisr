@@ -7,7 +7,7 @@ def random_walk(num_steps, prob_right, num_particles):
     particle_paths = []   # lista para guardar o caminho de todas as partículas
 
     for _ in range(num_particles):
-        posição = [0]     # lista que inicialmente tem a posição inicial de cada partícula
+        posição = [0]     # lista criada para cada partícula que guarda a sua posição de acordo com o ciclo seguinte: (todas as partículas começam na posição 0)
 
         for _ in range(num_steps):
             x = random.uniform(0,1)  #número gerado aleatoriamente usado para a comparação com a probabilidade da partícula ir para a direita
